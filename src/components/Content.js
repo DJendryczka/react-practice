@@ -6,11 +6,16 @@ const Content = () => {
         const randomIndex = Math.floor(Math.random() * names.length);
         return names[randomIndex];
      }
+
+     const handleClick = () => {
+            alert('Hello, World!');
+     };
   return (
     <main>
         <p>
     My name is {handlaName()}
     </p>
+    <button onClick={handleClick}>Click me!</button>
     </main>
   )
 }
